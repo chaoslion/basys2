@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Oct 14 12:27:41 2016
+# Process ID: 1288
+# Log file: D:/HARDSOFTALL/Projekte/basys2/logic/ledcounter/planAhead.log
+# Journal file: D:/HARDSOFTALL/Projekte/basys2/logic/ledcounter\planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {D:\HARDSOFTALL\Projekte\basys2\logic\ledcounter\led_counter.ppr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user repositories specified
+INFO: [IP_Flow 19-816] Loaded Xilinx IP repository 'C:/Xilinx/14.7/ISE_DS/ISE/'
+Qt: Untested Windows version 6.2 detected!
+open_project: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 456.512 ; gain = 86.230
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Fri Oct 14 12:29:10 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

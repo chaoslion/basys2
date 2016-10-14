@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Oct 14 11:31:01 2016
+# Process ID: 4696
+# Log file: D:/HARDSOFTALL/Projekte/basys2/logic/eppmemory/planAhead.log
+# Journal file: D:/HARDSOFTALL/Projekte/basys2/logic/eppmemory\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\HARDSOFTALL\Projekte\basys2\logic\eppmemory\eppmemory.ppr}
+file delete -force D:/HARDSOFTALL/Projekte/basys2/logic/eppmemory/eppmemory.srcs/sources_1/ip/blk_mem_gen_v7_3_0
+remove_files D:/HARDSOFTALL/Projekte/basys2/logic/eppmemory/eppmemory.srcs/sources_1/ip/blk_mem_gen_v7_3_0/blkmem2kb.xci
+set_property target_constrs_file D:/HARDSOFTALL/Projekte/basys2/logic/eppmemory/eppmemory.src/constrs_1/new/basys2.ucf [current_fileset -constrset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+generate_target  synthesis  [get_files  D:/HARDSOFTALL/Projekte/basys2/logic/eppmemory/eppmemory.srcs/sources_1/ip/blk_mem_gen_v7_3_0/ram256byte.xci]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step Bitgen
+wait_on_run impl_1

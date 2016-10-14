@@ -1,0 +1,72 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_mcs_v1_4_0.ngc ...
+WARNING:NetListWriters:298 - No output is written to microblaze_mcs_v1_4_0.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Config_Reg<31 : 0> on block MDM_Core is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/INTC_CISR<7 : 3> on block
+   microblaze_mcs_v1_4_0 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cier<7 : 3> on block
+   microblaze_mcs_v1_4_0 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cimr<7 : 3> on block
+   microblaze_mcs_v1_4_0 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr<7 : 3> on block
+   microblaze_mcs_v1_4_0 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cisr<7 : 3> on block
+   microblaze_mcs_v1_4_0 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/civr<2 : 0> on block
+   microblaze_mcs_v1_4_0 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/mux_res<2 : 0> on block
+   microblaze_mcs_v1_4_0 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/microblaze_I/LOCKSTEP_Master_Out<9 :
+   2> on block microblaze_mcs_v1_4_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Result_Mux_I/data_Read_Mas
+   k<16 : 0> on block microblaze_mcs_v1_4_0 is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Shift_Logic_Module_I/op1_s
+   hift<29 : 0> on block microblaze_mcs_v1_4_0 is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Shift_Logic_Module_I/sext<
+   16 : 0> on block microblaze_mcs_v1_4_0 is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debu
+   g_Area/control_reg<8 : 0> on block microblaze_mcs_v1_4_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debu
+   g_Area/status_reg<27 : 0> on block microblaze_mcs_v1_4_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debu
+   g_Area/tdo_config_word1<15 : 0> on block microblaze_mcs_v1_4_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/microblaze_I/local_sig<3728 : 2> on
+   block microblaze_mcs_v1_4_0 is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_mcs_v1_4_0.edif ...
+ngc2edif: Total memory usage is 90804 kilobytes
+

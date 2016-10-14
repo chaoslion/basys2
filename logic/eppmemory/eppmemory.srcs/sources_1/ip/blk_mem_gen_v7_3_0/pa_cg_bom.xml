@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+  <IPInstance name="ram256byte">
+    <FileSets>
+      <FileSet generator="apply_current_project_options_generator">
+        <File name="./apply_current_project_options_generator.xlog" type="ignore" timestamp="Fri Oct 14 10:23:58 GMT 2016" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="model_parameter_resolution_generator">
+        <File name="./summary.log" type="unknown" timestamp="Fri Oct 14 10:22:37 GMT 2016" checksum="0x3F4AE00C"></File>
+      </FileSet>
+      <FileSet generator="ip_xco_generator">
+        <File name="./ram256byte.xco" type="xco" timestamp="Fri Oct 14 10:22:37 GMT 2016" checksum="0x17739D77"></File>
+      </FileSet>
+      <FileSet generator="associated_files_generator">
+        <File name="./ram256byte/blk_mem_gen_v7_3_readme.txt" type="ignore" timestamp="Sun Oct 13 18:11:47 GMT 2013" checksum="0xF95F2A26"></File>
+        <File name="./ram256byte/doc/blk_mem_gen_v7_3_vinfo.html" type="ignore" timestamp="Sun Oct 13 18:11:47 GMT 2013" checksum="0x702C7FA8"></File>
+        <File name="./ram256byte/doc/pg058-blk-mem-gen.pdf" type="ignore" timestamp="Sun Oct 13 18:11:47 GMT 2013" checksum="0xC1E42F23"></File>
+      </FileSet>
+      <FileSet generator="ejava_generator">
+        <File name="./ram256byte/example_design/ram256byte_exdes.ucf" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xC44C6B6D"></File>
+        <File name="./ram256byte/example_design/ram256byte_exdes.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xDD66A7E5"></File>
+        <File name="./ram256byte/example_design/ram256byte_exdes.xdc" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x7684D6D4"></File>
+        <File name="./ram256byte/example_design/ram256byte_prod.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x7540405B"></File>
+        <File name="./ram256byte/implement/implement.bat" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xF45231B8"></File>
+        <File name="./ram256byte/implement/implement.sh" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x24BA881A"></File>
+        <File name="./ram256byte/implement/planAhead_ise.bat" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x90DA0C99"></File>
+        <File name="./ram256byte/implement/planAhead_ise.sh" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x87EA5065"></File>
+        <File name="./ram256byte/implement/planAhead_ise.tcl" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x9EDF5E2F"></File>
+        <File name="./ram256byte/implement/xst.prj" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xA29CFB9F"></File>
+        <File name="./ram256byte/implement/xst.scr" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x2B8EC298"></File>
+        <File name="./ram256byte/simulation/addr_gen.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x0500E48D"></File>
+        <File name="./ram256byte/simulation/bmg_stim_gen.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x5D1C506A"></File>
+        <File name="./ram256byte/simulation/bmg_tb_pkg.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xE0D93E5B"></File>
+        <File name="./ram256byte/simulation/checker.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x3EC35020"></File>
+        <File name="./ram256byte/simulation/data_gen.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xD9F7C4A0"></File>
+        <File name="./ram256byte/simulation/functional/simcmds.tcl" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xB6B36863"></File>
+        <File name="./ram256byte/simulation/functional/simulate_isim.bat" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x102AFF59"></File>
+        <File name="./ram256byte/simulation/functional/simulate_mti.bat" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x86EA5D67"></File>
+        <File name="./ram256byte/simulation/functional/simulate_mti.do" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x2ABE60B7"></File>
+        <File name="./ram256byte/simulation/functional/simulate_mti.sh" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x86EA5D67"></File>
+        <File name="./ram256byte/simulation/functional/simulate_ncsim.sh" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x3277DF5A"></File>
+        <File name="./ram256byte/simulation/functional/simulate_vcs.sh" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xD7968CA0"></File>
+        <File name="./ram256byte/simulation/functional/ucli_commands.key" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x62BD4F58"></File>
+        <File name="./ram256byte/simulation/functional/vcs_session.tcl" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x33565D43"></File>
+        <File name="./ram256byte/simulation/functional/wave_mti.do" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x37A65A4D"></File>
+        <File name="./ram256byte/simulation/functional/wave_ncsim.sv" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xCBE57698"></File>
+        <File name="./ram256byte/simulation/ram256byte_synth.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xFCE3968C"></File>
+        <File name="./ram256byte/simulation/ram256byte_tb.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x75C69474"></File>
+        <File name="./ram256byte/simulation/random.vhd" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x2939160A"></File>
+        <File name="./ram256byte/simulation/timing/simcmds.tcl" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xB6B36863"></File>
+        <File name="./ram256byte/simulation/timing/simulate_isim.bat" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x4E603B81"></File>
+        <File name="./ram256byte/simulation/timing/simulate_mti.bat" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x86EA5D67"></File>
+        <File name="./ram256byte/simulation/timing/simulate_mti.do" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x9DDBAA7D"></File>
+        <File name="./ram256byte/simulation/timing/simulate_mti.sh" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x86EA5D67"></File>
+        <File name="./ram256byte/simulation/timing/simulate_ncsim.sh" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x0916368C"></File>
+        <File name="./ram256byte/simulation/timing/simulate_vcs.sh" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x1FF22A58"></File>
+        <File name="./ram256byte/simulation/timing/ucli_commands.key" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x62BD4F58"></File>
+        <File name="./ram256byte/simulation/timing/vcs_session.tcl" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xADC0E1BF"></File>
+        <File name="./ram256byte/simulation/timing/wave_mti.do" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0xFFFC898E"></File>
+        <File name="./ram256byte/simulation/timing/wave_ncsim.sv" type="ignore" timestamp="Fri Oct 14 10:22:39 GMT 2016" checksum="0x2F6F4AD6"></File>
+      </FileSet>
+      <FileSet generator="ngc_netlist_generator">
+        <File name="./ram256byte.ngc" type="ngc" timestamp="Fri Oct 14 10:23:39 GMT 2016" checksum="0x176E6B40"></File>
+      </FileSet>
+      <FileSet generator="obfuscate_netlist_generator">
+        <File name="./obfuscate_netlist_generator.xlog" type="ignore" timestamp="Fri Oct 14 10:23:58 GMT 2016" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="padded_implementation_netlist_generator">
+        <File name="./padded_implementation_netlist_generator.xlog" type="ignore" timestamp="Fri Oct 14 10:23:58 GMT 2016" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="instantiation_template_generator">
+        <File name="./ram256byte.vho" type="vho" timestamp="Fri Oct 14 10:23:40 GMT 2016" checksum="0xC3530998"></File>
+      </FileSet>
+      <FileSet generator="structural_simulation_model_generator">
+        <File name="./ram256byte.vhd" type="vhdl" timestamp="Fri Oct 14 10:23:40 GMT 2016" checksum="0x13BCD892"></File>
+      </FileSet>
+      <FileSet generator="all_documents_generator">
+        <File name="./ram256byte/doc/blk_mem_gen_v7_3_vinfo.html" type="ignore" timestamp="Fri Oct 14 10:23:40 GMT 2016" checksum="0x702C7FA8"></File>
+      </FileSet>
+      <FileSet generator="asy_generator">
+        <File name="./ram256byte.asy" type="asy" timestamp="Fri Oct 14 10:23:44 GMT 2016" checksum="0xC17EDBF4"></File>
+        <File name="./summary.log" type="unknown" timestamp="Fri Oct 14 10:23:44 GMT 2016" checksum="0x3F4AE00C"></File>
+      </FileSet>
+      <FileSet generator="xmdf_generator">
+        <File name="./ram256byte_xmdf.tcl" type="tclXmdf" timestamp="Fri Oct 14 10:23:44 GMT 2016" checksum="0x183C33A2"></File>
+      </FileSet>
+      <FileSet generator="synthesis_ise_generator">
+        <File name="./ram256byte.gise" type="ignore" timestamp="Fri Oct 14 10:23:55 GMT 2016" checksum="0x24D8EC85"></File>
+        <File name="./ram256byte.xise" type="ignore" timestamp="Fri Oct 14 10:23:55 GMT 2016" checksum="0xB4FC4E28"></File>
+      </FileSet>
+      <FileSet generator="ise_generator">
+        <File name="./ram256byte.gise" type="ignore" timestamp="Fri Oct 14 10:23:58 GMT 2016" checksum="0x0C94E4C8"></File>
+        <File name="./ram256byte.xise" type="ignore" timestamp="Fri Oct 14 10:23:58 GMT 2016" checksum="0xE30ACBE7"></File>
+      </FileSet>
+      <FileSet generator="deliver_readme_generator">
+        <File name="./deliver_readme_generator.xlog" type="ignore" timestamp="Fri Oct 14 10:23:58 GMT 2016" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="flist_generator">
+        <File name="./ram256byte_flist.txt" type="ignore" timestamp="Fri Oct 14 10:23:58 GMT 2016" checksum="0xFA76F5C3"></File>
+      </FileSet>
+    </FileSets>
+  </IPInstance>
+</BillOfMaterials>

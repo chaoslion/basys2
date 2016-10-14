@@ -1,3 +1,32 @@
+resources/
+videos/
+
+
+
+# firmware begin
+# do not include bsp's and resources
+firmware/.metadata/
+firmware/*.log
+
+# cpu_ledcounter
+firmware/cpu_ledcounter/
+firmware/cpu_ledcounter_bsp/
+firmware/cpu_ledcounter_app/Debug
+# firmware end
+
+# logic begin
+logic/*/*.data
+logic/*/*.runs
+logic/*/*.sim
+# logic end
+
+# win begin
+windows/*/.vs/
+windows/*/bin
+windows/*/obj
+windows/*/Debug
+# win end
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
