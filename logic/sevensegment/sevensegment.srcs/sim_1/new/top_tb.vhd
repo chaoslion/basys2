@@ -36,24 +36,22 @@ end top_tb;
 
 architecture Behavioral of top_tb is
 
-    component SevSegDriver is
+    component top is
     port(
-        PORT_CLK50: in std_logic;            
-        PORT_NUMBER: in std_logic_vector(3 downto 0);
-        PORT_SEP: in std_logic;
-        PORT_CAT: out std_logic_vector(7 downto 0)  
+        PORT_CLK50: in std_logic;
+        PORT_SEGAN: out std_logic_vector(3 downto 0);
+        PORT_SEGCAT: out std_logic_vector(7 downto 0)    
     );
     end component;
     signal clk: std_logic := '0';
-    signal cathodes: std_logic_vector(7 downto 0);
+    
 begin
     clk <= not clk  after 10 ns;
         
-    iseg0: SevSegDriver port map(
+    itop: top port map(
          PORT_CLK50 => clk,        
-         PORT_NUMBER => x"2",  
-         PORT_SEP => '0',
-         PORT_CAT => cathodes          
+         PORT_SEGAN => open,  
+         PORT_SEGCAT => open                   
      );
 
 end Behavioral;

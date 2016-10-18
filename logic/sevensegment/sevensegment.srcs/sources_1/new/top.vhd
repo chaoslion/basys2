@@ -14,11 +14,11 @@ architecture Behavioral of top is
 
     component MultiSevSegDriver is
     generic(
-        CHANNELS: integer;
-        RATE: integer
+        CHANNELS: positive;
+        RATE_DIVIDER: positive 
     );	
     port(
-        PORT_CLK50: in std_logic;
+        PORT_CLK: in std_logic;
         PORT_NUMBERS: in std_logic_vector(CHANNELS*4-1 downto 0);
         PORT_SEP: in std_logic_vector(CHANNELS-1 downto 0);
         PORT_CAT: out std_logic_vector(7 downto 0);
@@ -34,12 +34,12 @@ begin
     isegs: MultiSevSegDriver 
     generic map(
         CHANNELS => 4,
-        RATE => 100
+        RATE_DIVIDER => 50e6
     )
     port map(
-        PORT_CLK50 => PORT_CLK50,
+        PORT_CLK => PORT_CLK50,
         PORT_NUMBERS => x"1337",
-        PORT_SEP => "0010",
+        PORT_SEP => "0001",
         PORT_CAT => cathodes,
         PORT_AN => anodes
     );

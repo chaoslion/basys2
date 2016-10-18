@@ -1,14 +1,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use IEEE.math_real.all;
 
 entity SevSegDriver is
 generic(
-    RATE: integer := 100
+    RATE_DIVIDER: positive
 );
 port(
-    PORT_CLK50: in std_logic;            
+    PORT_CLK: in std_logic;            
     PORT_NUMBER: in std_logic_vector(3 downto 0);
     PORT_SEP: in std_logic;
     PORT_CAT: out std_logic_vector(7 downto 0);
@@ -16,10 +15,9 @@ port(
 );
 end SevSegDriver;
 
-architecture Behavioral of SevSegDriver is
-    constant RATE_DIVIDER: integer := integer(ceil(real(50000000/(RATE*8))));
-    constant SEG_MAX: unsigned(16 downto 0) := to_unsigned(RATE_DIVIDER-1, 17);
-    signal seg_cnt: unsigned(16 downto 0) := (others => '0');    
+architecture Behavioral of SevSegDriver is    
+    constant SEG_MAX: unsigned(31 downto 0) := to_unsigned(RATE_DIVIDER/8-1, 32);
+    signal seg_cnt: unsigned(31 downto 0) := (others => '0');    
     signal ca_mask_active: std_logic_vector(7 downto 0) := "00000001";
     signal ca_mask: std_logic_vector(7 downto 0);    
     
@@ -29,7 +27,7 @@ begin
 
     process 
     begin
-        wait until rising_edge(PORT_CLK50);
+        wait until rising_edge(PORT_CLK);
         
         seg_done <= '0';
         if seg_cnt = SEG_MAX then
@@ -42,7 +40,7 @@ begin
     
     process 
     begin
-        wait until rising_edge(PORT_CLK50);
+        wait until rising_edge(PORT_CLK);
                 
         all_done <= '0';
         if seg_done = '1' then
@@ -57,7 +55,7 @@ begin
       
     process 
     begin
-        wait until rising_edge(PORT_CLK50);
+        wait until rising_edge(PORT_CLK);
                                       
         if seg_cnt = SEG_MAX then            
             seg_cnt <= (others => '0');            

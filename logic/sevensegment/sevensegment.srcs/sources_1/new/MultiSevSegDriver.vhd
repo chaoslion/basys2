@@ -1,16 +1,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.math_real.all;
 use IEEE.NUMERIC_STD.ALL;
 
-
+-- max channels is 8
 entity MultiSevSegDriver is
 generic(
-    CHANNELS: integer;
-    RATE: integer
+    CHANNELS: positive;
+    RATE_DIVIDER: positive  
 );	
 port(
-    PORT_CLK50: in std_logic;
+    PORT_CLK: in std_logic;
     PORT_NUMBERS: in std_logic_vector(CHANNELS*4-1 downto 0);
     PORT_SEP: in std_logic_vector(CHANNELS-1 downto 0);
     PORT_CAT: out std_logic_vector(7 downto 0);
@@ -22,10 +21,10 @@ architecture Behavioral of MultiSevSegDriver is
 
     component SevSegDriver is
     generic(
-        RATE: integer := 100
+        RATE_DIVIDER: positive
     );
     port(
-        PORT_CLK50: in std_logic;            
+        PORT_CLK: in std_logic;            
         PORT_NUMBER: in std_logic_vector(3 downto 0);
         PORT_SEP: in std_logic;
         PORT_CAT: out std_logic_vector(7 downto 0);
@@ -35,16 +34,16 @@ architecture Behavioral of MultiSevSegDriver is
 
     signal done_lines: std_logic_vector(CHANNELS-1 downto 0);
     signal cathodes: std_logic_vector(CHANNELS*8-1 downto 0);
-    signal active_select: unsigned( integer(ceil(log2(real(CHANNELS)))) downto 0) := (others => '0');
+    signal active_select: unsigned(2 downto 0) := (others => '0');
 begin
     
     SEG_GEN: for ch in 0 to CHANNELS-1 generate
         iseg: SevSegDriver 
         generic map(
-            RATE => CHANNELS * RATE
+            RATE_DIVIDER => RATE_DIVIDER / CHANNELS
         )
         port map(
-            PORT_CLK50 => PORT_CLK50,            
+            PORT_CLK => PORT_CLK,            
             PORT_NUMBER => PORT_NUMBERS(ch*4+3 downto ch*4),
             PORT_SEP => PORT_SEP(ch),
             PORT_CAT => cathodes(ch*8+7 downto ch*8),
@@ -54,7 +53,7 @@ begin
    
     process
     begin
-        wait until rising_edge(PORT_CLK50);
+        wait until rising_edge(PORT_CLK);
         
         if done_lines(0) = '1' then        
             if to_integer(active_select) = CHANNELS-1 then
